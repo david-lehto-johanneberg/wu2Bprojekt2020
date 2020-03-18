@@ -1,6 +1,7 @@
 #container {
   display:grid;
   height: 100vh;
+  width: 80vw;
   grid-gap: 5px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 10fr 90fr;
@@ -10,19 +11,32 @@
 }
 
 body {
-    margin: 0;
+    margin: auto;
     padding: 0;
+    max-width: 80vw;
   }
 
-nav {
-  grid-area: nav;
-  display: flex;
-  margin-top: 25px;
-}
-  
+  main {
+    grid-area: ma;
+
+    display:grid;
+    padding:0;
+
+  }
+
   #icon {
     height:100px
+    
   }
+
+
+nav {
+ grid-area: nav;
+ display:flex;
+ justify-content:flex-end;
+}
+  
+
 
   a, a:link {
     color:black;
@@ -31,7 +45,6 @@ nav {
     display:flex;
     justify-content: center;
     align-items: center;
-  
   }
   
   
@@ -39,8 +52,21 @@ nav {
     color:black;
     background-color:lightgray;
   }
-main {
-grid-area: ma;
 
+header {
+
+text-align: center;
+background-image: url(../img/bil-lan.jpg);
+background-repeat: no-repeat;
+background-position: top;
+background-size: 150vh;
+padding: 12px 30vh;
 }
 
+
+
+#cards {
+  display: flex;
+  width: 80vw;
+  justify-content: space-around;
+}
