@@ -1,4 +1,4 @@
-#container {
+.container {
   display:grid;
   height: 100vh;
   max-width: 80vw;
@@ -14,6 +14,8 @@ body {
     margin: auto;
     padding: 0;
     max-width: 80vw;
+    height: 100%;
+    font-family: 'Open Sans',sans-serif,museo_sans,Helvetica,Arial;
   }
 
   main {
@@ -52,14 +54,14 @@ nav {
     background-color:lightgray;
   }
 
-header {
+.indexh {
 color: white;
 text-align: center;
-background-image: url(../img/bil-lan.jpg);
+background-image: url(../img/background.jpg);
 background-repeat: no-repeat;
 background-position: top;
 background-size: 80vw;
-padding: 12px 10vw;
+padding: 30px 10vw;
 }
 
 #cards {
@@ -67,15 +69,104 @@ padding: 12px 10vw;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   height: 250px;
   width: 80vw;
-  background-color: gray
 
 }
 
 #cards article {
   display: grid;
-  align-items: center;
+  padding: 20px 20px; 
+  text-align: center;
+
+
 }
 
 .iconer {
-  width: 50%;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3 {
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: .5em;
+  color: #26282c;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: .875em;
+  margin: 0;
+  text-align: center;
+}
+
+#cars {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80vw;
+  text-align: center;
+
+
+}
+
+.bilbild {
+  width: 20vw;
+  height: 250px;
+  justify-content: center;
+
+}
+
+.saljah {
+  color: white;
+  text-align: center;
+  background-image: url(../img/487625_1920.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 80vw;
+  padding: 0px 5vw;
+  padding-right: 30vw;
+  height: 250px;
+  }
+
+#saljval {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80vw;
+  text-align: center;
+}
+
+#kvdlogo {
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px
+}
+
+#tkglogo {
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  padding: 2vh 3vh;
+  background: lightgreen;
+  color: #0e0e0e;
+  margin: 0px 20vh;
+
+}
+
+.handlareh {
+  color: black;
+  background-color: lightgrey;
+  padding: 0px 3vw;
+  padding-right: 30vw;
+  height: 250px;
+}
+
+#biltyper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80vw;
+  text-align: center;
 }
