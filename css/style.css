@@ -169,4 +169,22 @@ h4 {
   grid-template-columns: 1fr 1fr 1fr;
   width: 80vw;
   text-align: center;
+  padding-top: 20px;
 }
+
+.forsakringh {
+  color: white;
+  text-align: center;
+  background-image: url(../img/forsakringbakgrund.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 80vw;
+  padding: 30px 10vw;
+  }
+
+  #folksam {
+    width: 18%;
+    position: absolute;
+    right: 10vw;
+
+  }
