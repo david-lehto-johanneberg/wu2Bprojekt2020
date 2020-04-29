@@ -9,6 +9,9 @@
       "nav nav nav nav nav"
       "ma ma ma ma ma"
 }
+.menu-button{
+  display: none;
+}
 
 body {
     margin: auto;
@@ -243,7 +246,7 @@ h4 {
     text-align: center;
     background-image: none;
     padding: 0px 5vw;
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
   #saljval {
     display: grid;
@@ -303,50 +306,59 @@ h4 {
     grid-template-columns: 1fr;
     width: 80vw;
 }
-
-.burgermenuitems {
-  color: white;
-  text-transform: uppercase;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  text-align: center;
-  line-height: 100px;
-  font-size: 28px;
-  background-color: #4B0082;
-  width: 70%;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
+.menu{
+  height: 100vh;
+  width: 80vw;
+  background: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  left: -90vw;
+  transition: left 0.3s;
+  box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+  z-index: 10;
 }
 
-.burger {
-  display: none;
-  position: absolute;
-  z-index: 3;
-  top: 42px;
-  left: 20px;
+.menu-button{
   cursor: pointer;
+  display: inline;
+  color: white;
+  padding: 1em;
 }
 
-.bar1, .bar2, .bar3 {
+.menu-button i.material-icons{
+  font-size: 2.5rem;
+}
+
+.show-menu{
+  left: 0;
+  
+}
+
+.fade{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+  z-index: 5;
+}
+
+.visible{
+  display: block;
+}
+.streck {
   width: 35px;
   height: 5px;
-  background-color: white;
+  background-color: black;
   margin: 6px 0;
-  transition: 0.4s;
 }
 
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-  transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
-
-.change .bar2 {
-  opacity: 0;
-}
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-  transform: rotate(45deg) translate(-8px, -8px) ;
+.streck-vit {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(0, 0, 0);
+  margin: 6px 0;
 }
 }
