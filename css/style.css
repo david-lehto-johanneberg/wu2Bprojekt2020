@@ -1,4 +1,4 @@
-mnav {
+nav.mnav {
   display:none;
 }
 .container {
@@ -212,7 +212,7 @@ h4 {
   #icon {
     height:40px
   }
-  nav {
+  nav#dnav {
     display: none;
   }
   .indexh {
@@ -353,6 +353,9 @@ h4 {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg); }
 
+    nav.mnav {
+      display: block;
+    }
 
 .mnav {
   background: grey;
@@ -360,7 +363,7 @@ h4 {
   cursor: pointer;
   font-size: 2rem;
   height: 100vh;
-  left: -45vh;
+  left: -50vh;
   padding: 6rem 2rem 2rem 2rem;
   position: fixed;
   top: 0;

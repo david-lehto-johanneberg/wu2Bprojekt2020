@@ -2,7 +2,7 @@
 
 	var hamburger = {
 		mnavToggle: document.querySelector('.mnav-toggle'),
-		mnav: document.querySelector('mnav'),
+		mnav: document.querySelector('nav.mnav'),
 
 		doToggle: function(e) {
 			e.preventDefault();
