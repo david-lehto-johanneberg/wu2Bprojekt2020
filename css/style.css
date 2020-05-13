@@ -114,7 +114,6 @@ h4 {
 
 .bilbild {
   width: 20vw;
-  height: 250px;
   justify-content: center;
 
 }
@@ -201,6 +200,10 @@ h4 {
   
 }
 
+#typerp {
+  line-height: 1.5em;
+}
+
 @media (max-width: 1024px) {
   body {
     margin: auto;
@@ -237,9 +240,7 @@ h4 {
   }
   .bilbild {
     width: 70vw;
-    height: 250px;
     justify-content: center;
-  
   }
   .saljah {
     color: black;
